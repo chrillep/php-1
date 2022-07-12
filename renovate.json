@@ -4,6 +4,7 @@
     "config:base",
     ":automergeMinor"
   ],
+  "includeForks": true,
   "labels": ["dependencies"],
   "packageRules": [
     {
