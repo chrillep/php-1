@@ -3,6 +3,7 @@
   "extends": [
     "config:base",
     ":automergeMinor"
+    ":preserveSemverRanges"
   ],
   "includeForks": true,
   "labels": ["dependencies"],
