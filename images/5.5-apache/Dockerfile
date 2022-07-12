@@ -1,7 +1,7 @@
 # Basic apache php 5.5 appserver for Lando
 # docker build -t devwithlando/php:5.5-apache-2 .
 
-FROM php:5.5-apache
+FROM php:8.1-apache
 
 # Install dependencies we need
 RUN sed -i '/jessie-updates/d' /etc/apt/sources.list \

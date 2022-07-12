@@ -1,6 +1,6 @@
 # docker build -t devwithlando/php:8.0-apache-4 .
 
-FROM php:8.0-apache-bullseye
+FROM php:8.1-apache-bullseye
 
 # Install dependencies we need
 RUN mkdir -p /usr/share/man/man1 /usr/share/man/man7 \
