@@ -16,6 +16,12 @@ jobs:
       matrix:
         include:
           - image: php
+            tag: 8.2-fpm-4
+            context: images/8.2-fpm
+          - image: php
+            tag: 8.2-apache-4
+            context: images/8.2-apache
+          - image: php
             tag: 8.1-fpm-4
             context: images/8.1-fpm
           - image: php
@@ -72,7 +78,7 @@ jobs:
           tags: devwithlando/${{ matrix.image }}:${{ matrix.tag }}${{ steps.pr.outputs.TAG_SUFFIX }}
 
       # Handle Lando Install to test the images after build
-      # We are hardcoding the dtaa normally included in the matrix 
+      # We are hardcoding the dtaa normally included in the matrix
       # due to how this testing is setup
       - name: Install node 14
         uses: actions/setup-node@v2

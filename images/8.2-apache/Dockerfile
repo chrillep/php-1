@@ -1,6 +1,6 @@
-# docker build -t devwithlando/php:8.2-fpm-4 .
+# docker build -t devwithlando/php:8.2-apache-4 .
 
-FROM php:8.2-fpm-bullseye
+FROM php:8.2-apache-bullseye
 
 # Install dependencies we need
 RUN mkdir -p /usr/share/man/man1 /usr/share/man/man7 \
@@ -82,5 +82,4 @@ RUN mkdir -p /usr/share/man/man1 /usr/share/man/man7 \
   && docker-php-ext-configure gd --enable-gd --with-jpeg --with-webp --with-freetype \
   && docker-php-ext-install gd
 
-# Tests
 RUN curl https://dl.yarnpkg.com
