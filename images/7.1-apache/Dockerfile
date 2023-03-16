@@ -1,6 +1,6 @@
 # docker build -t devwithlando/php:7.1-apache-3 .
 
-FROM php:7.1-apache-buster
+FROM php:7.4-apache-buster
 
 # Install dependencies we need
 RUN mkdir -p /usr/share/man/man1 /usr/share/man/man7 \
