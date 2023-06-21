@@ -1,6 +1,6 @@
 # docker build -t devwithlando/php:5.6-fpm-3 .
 
-FROM php:5.6-fpm-stretch
+FROM php:7.3-fpm-stretch
 
 # Install dependencies we need
 RUN mkdir -p /usr/share/man/man1 /usr/share/man/man7 \
