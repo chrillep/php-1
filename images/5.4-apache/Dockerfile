@@ -1,6 +1,6 @@
 # docker build -t devwithlando/php:5.4-apache-2 .
 
-FROM php:5.4-apache
+FROM php:8.4-apache
 
 # Inject the updated apache2-foreground script
 COPY apache2-foreground /usr/local/bin/

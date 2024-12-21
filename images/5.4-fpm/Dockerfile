@@ -1,6 +1,6 @@
 # docker build -t devwithlando/php:5.4-fpm-2 .
 
-FROM php:5.4.45-fpm
+FROM php:8.4.2-fpm
 
 # Install dependencies we need
 RUN sed -i '/jessie-updates/d' /etc/apt/sources.list \
